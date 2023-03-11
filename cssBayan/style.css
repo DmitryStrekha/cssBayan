@@ -6,7 +6,7 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
-   cursor:crosshair
+   cursor:crosshair;
 }
 .slider {
     height: 100%;
@@ -34,6 +34,7 @@ img {
 .cross {
     display: flex;
     justify-content: flex-end;
+    opacity: 0%;
 }
 
 span{
@@ -86,6 +87,8 @@ button:focus span{
 }
 button:focus .cross{
     color: red;
+    opacity: 100%;
+    transform: rotateZ(45deg);
 }
 
 @media(min-width: 820px){
@@ -153,10 +156,16 @@ button:focus .cross{
     }
     .slider:hover .cross {
         opacity: 100%;
+        
     }
     button:hover {
         height: 60%;
-        cursor: pointer;}
+        cursor: pointer;
+        
+    }
+    button:hover .cross{
+        transform: rotateZ(45deg);
+    }
     button:hover .img{
         height: 33vh;
         width: 33vh;
