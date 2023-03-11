@@ -1,0 +1,169 @@
+*{
+    transition: all 0.5s;  
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+   cursor:crosshair
+}
+
+.slider {
+    height: 100%;
+    width: 49vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    height: 40vh;
+    width: 40vh;
+    background: black;
+    opacity: 0%;
+}
+
+img {
+    height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.cross {
+    display: flex;
+    justify-content: flex-end;
+}
+
+span{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+
+}
+
+.container {
+    margin-top: 3.5%;
+    margin-bottom: 5%;
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+}
+
+button{
+    border-left:none;
+    border-right:none;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 6vh;
+}
+
+button:active {
+    opacity: 50%;
+    background-color: aqua;
+    cursor: grabbing;
+}
+span:active{
+    color: rgb(182, 233, 16);
+}
+button:focus {
+    height: 50%;
+}
+button:focus .img{
+    height: 33vh;
+    width: 33vh;
+    opacity: 100%;
+}
+button:focus span{
+
+    color: red;
+}
+button:focus .cross{
+    color: red;
+}
+
+@media(min-width: 820px){
+    .slider {
+        height: 100%;
+        width: 100%;
+    }
+    .slider:hover .cross {
+        opacity: 100%;
+    }
+    .cross {
+        display: flex;
+        justify-content: flex-end;
+    }
+    span{
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: flex-start;
+    
+    }
+    .container {
+        margin-top: 1%;
+        margin-bottom: 5%;
+        display: flex;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    /*
+    button:hover {
+        height: 60%;
+        cursor: pointer;}
+    button:hover .img{
+        height: 33vh;
+        width: 33vh;
+        opacity: 100%;
+    }*/
+    button:focus .cross{
+        transform: rotateZ(45deg);
+        color: red;}
+    
+}
+
+@media(min-width: 1920px){
+    .slider {
+        height: 100%;
+        width: 50%;
+    }
+    .cross {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    span{
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: flex-start;
+    
+    }
+    .container {
+        margin-top: 1%;
+        margin-bottom: 5%;
+        display: flex;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .slider:hover .cross {
+        opacity: 100%;
+    }
+    button:hover {
+        height: 60%;
+        cursor: pointer;}
+    button:hover .img{
+        height: 33vh;
+        width: 33vh;
+        opacity: 100%;
+    }
+    button:focus .cross{
+        transform: rotateZ(45deg);
+        color: red;} 
+}
