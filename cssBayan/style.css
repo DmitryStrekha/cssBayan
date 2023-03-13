@@ -10,7 +10,7 @@
 }
 .slider {
     height: 100%;
-    width: 49vh;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@ button:focus .cross{
 @media(min-width: 820px){
     .slider {
         height: 100%;
-        width: 100%;
+        width: 70%;
     }
     .slider:hover .cross {
         opacity: 100%;
@@ -116,7 +116,7 @@ button:focus .cross{
         width: 100%;
         font-size: 1.5rem;
     }
-    /*
+    
     button:hover {
         height: 60%;
         cursor: pointer;}
@@ -124,7 +124,7 @@ button:focus .cross{
         height: 33vh;
         width: 33vh;
         opacity: 100%;
-    }*/
+    }
     button:focus .cross{
         transform: rotateZ(45deg);
         color: red;}
