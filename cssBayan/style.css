@@ -97,9 +97,6 @@ button:focus .cross{
         height: 100%;
         width: 70%;
     }
-    .slider:hover .cross {
-        opacity: 100%;
-    }
     .cross {
         display: flex;
         justify-content: flex-end;
@@ -117,21 +114,30 @@ button:focus .cross{
         width: 100%;
         font-size: 1.5rem;
     }
-    
-    button:hover {
-        height: 60%;
-        cursor: pointer;}
-    button:hover .img{
-        height: 33vh;
-        width: 33vh;
-        opacity: 100%;
-    }
     button:focus .cross{
         transform: rotateZ(45deg);
         color: red;}
     
 }
-
+@media(min-width: 1024px){
+    .slider:hover .cross {
+        opacity: 100%;
+        
+    }
+    button:hover {
+        height: 60%;
+        cursor: pointer;
+        
+    }
+    button:hover .cross{
+        transform: rotateZ(45deg);
+    }
+    button:hover .img{
+        height: 33vh;
+        width: 33vh;
+        opacity: 100%;
+    }
+}
 @media(min-width: 1920px){
     .slider {
         height: 100%;
@@ -176,3 +182,4 @@ button:focus .cross{
         transform: rotateZ(45deg);
         color: red;} 
 }
+
