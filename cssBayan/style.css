@@ -83,14 +83,9 @@ button:focus .img{
     opacity: 100%;
 }
 button:focus span{
+    color: red;
+}
 
-    color: red;
-}
-button:focus .cross{
-    color: red;
-    opacity: 100%;
-    transform: rotateZ(45deg);
-}
 
 @media(min-width: 820px){
     .slider {
@@ -182,4 +177,5 @@ button:focus .cross{
         transform: rotateZ(45deg);
         color: red;} 
 }
+
 
